@@ -1,0 +1,4 @@
+split,images_copied,skipped,invalid_boxes,boxes
+train,8691,0,0,497856
+valid,2483,0,0,143316
+test,1242,0,0,70684

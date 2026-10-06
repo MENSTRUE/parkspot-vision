@@ -1,0 +1,76 @@
+{
+  "dataset_handle": "ammarnassanalhajali/pklot-dataset",
+  "source_format": "COCO",
+  "training_format": "YOLO",
+  "classes": [
+    "space-empty",
+    "space-occupied"
+  ],
+  "source_summary": {
+    "train": {
+      "images": 8691,
+      "annotations": 497856,
+      "counts": {
+        "space-occupied": 231948,
+        "space-empty": 265908
+      }
+    },
+    "valid": {
+      "images": 2483,
+      "annotations": 143316,
+      "counts": {
+        "space-occupied": 69687,
+        "space-empty": 73629
+      }
+    },
+    "test": {
+      "images": 1242,
+      "annotations": 70684,
+      "counts": {
+        "space-empty": 36584,
+        "space-occupied": 34100
+      }
+    }
+  },
+  "prepared_stats": [
+    {
+      "split": "train",
+      "images": 8691,
+      "labels": 8691,
+      "boxes": 497856,
+      "empty_labels": 189,
+      "class_counts": {
+        "1": 231948,
+        "0": 265908
+      }
+    },
+    {
+      "split": "valid",
+      "images": 2483,
+      "labels": 2483,
+      "boxes": 143316,
+      "empty_labels": 59,
+      "class_counts": {
+        "1": 69687,
+        "0": 73629
+      }
+    },
+    {
+      "split": "test",
+      "images": 1242,
+      "labels": 1242,
+      "boxes": 70684,
+      "empty_labels": 26,
+      "class_counts": {
+        "1": 34100,
+        "0": 36584
+      }
+    }
+  ],
+  "limitations": [
+    "Uses the Kaggle package train/valid/test split.",
+    "Original camera/day grouping may not be preserved.",
+    "Predictions are frame-level estimates.",
+    "Live CCTV and temporal smoothing are not implemented."
+  ]
+}
